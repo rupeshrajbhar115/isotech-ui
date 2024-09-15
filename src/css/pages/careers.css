@@ -1,0 +1,223 @@
+                #careers {
+                    padding-top: 82px;
+                }
+
+                #careers .banner {
+                    overflow: hidden;
+                }
+
+                #careers .banner .banner_slider .slider {
+                    position: relative;
+                    padding-bottom: 100px;
+                }
+
+                @media screen and (max-width: 992px) {
+
+                    #careers .banner .banner_slider .slider {
+                        padding-bottom: 50px;
+                    }
+                }
+
+                @media (min-width: 768px) and (max-width: 5000px) {
+
+                    #careers .banner .banner_slider .slider .mobile {
+                        display: none;
+                    }
+                }
+
+                @media screen and (max-width: 767px) {
+
+                    #careers .banner .banner_slider .slider .mobile {
+                        display: block;
+                    }
+                }
+
+                @media (min-width: 768px) and (max-width: 5000px) {
+
+                    #careers .banner .banner_slider .slider .dekstop {
+                        display: block;
+                    }
+                }
+
+                @media screen and (max-width: 767px) {
+
+                    #careers .banner .banner_slider .slider .dekstop {
+                        display: none;
+                    }
+                }
+
+                #careers .banner .banner_slider .slider img {
+                    width: 100%;
+                    max-width: 100%;
+                    height: auto;
+                    opacity: 1 !important;
+                    -webkit-animation-duration: 3s;
+                    animation-duration: 3s;
+                    transition: all 1s ease;
+                }
+
+                @media screen and (max-width: 992px) {
+
+                    #careers .banner .banner_slider .slider img {
+                        object-fit: cover;
+                    }
+                }
+
+                @media (min-width: 768px) and (max-width: 992px) {
+
+                    #careers .banner .banner_slider .slider img {
+                        height: 50vh;
+                        object-fit: cover;
+                    }
+                }
+
+                #careers .banner .banner_slider .slider .banner_info {
+                    top: 35%;
+                    width: 50%;
+                    opacity: 0;
+                    overflow: hidden;
+                    position: absolute;
+                    -webkit-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                    margin-left: var(--container_left_space);
+                }
+
+                @media screen and (max-width: 767px) {
+
+                    #careers .banner .banner_slider .slider .banner_info {
+                        top: 15%;
+                        width: 100%;
+                        padding: 15px;
+                    }
+                }
+
+                @media (min-width: 768px) and (max-width: 992px) {
+
+                    #careers .banner .banner_slider .slider .banner_info {
+                        top: 30%;
+                        width: 60%;
+                        padding: 15px;
+                    }
+                }
+
+                @media (min-width: 992px) and (max-width: 1200px) {
+
+                    #careers .banner .banner_slider .slider .banner_info {
+                        top: 20%;
+                        width: 50%;
+                    }
+                }
+
+                #careers .banner .banner_slider .slider .banner_info h2 {
+                    color: var(--color_secondary);
+                }
+
+                @media screen and (max-width: 767px) {
+
+                    #careers .banner .banner_slider .slider .banner_info h2 {
+                        text-align: center;
+                    }
+                }
+
+                #careers .banner .banner_slider .slider .banner_info h2 span {
+                    color: var(--color_white);
+                }
+
+                #careers .banner .banner_slider .slider .banner_info .para {
+                    padding: 10px 0 25px;
+                    color: var(--color_white);
+                }
+
+                @media screen and (max-width: 767px) {
+
+                    #careers .banner .banner_slider .slider .banner_info .para {
+                        font-size: 18px;
+                    }
+                }
+
+                #careers .banner .banner_slider .slider.slick-active .banner_info {
+                    opacity: 1;
+                }
+
+                #careers .banner .banner_slider .slider [data-animation-in] {
+                    opacity: 0;
+                    -webkit-animation-duration: 1.5s;
+                    animation-duration: 1.5s;
+                    transition: opacity 0.5s ease 0.3s;
+                }
+
+                #careers .banner .banner_slider .slick-dots {
+                    bottom: 25px;
+                    text-align: left;
+                    margin-left: var(--container_left_space);
+                }
+
+                #careers .banner .banner_slider .slick-dots li button:before {
+                    z-index: 1;
+                    font-size: 40px;
+                }
+
+                #careers .banner .banner_slider .slick-dots li.slick-active button:after {
+                    content: "";
+                    width: 20px;
+                    height: 19px;
+                    left: 0;
+                    top: 1px;
+                    z-index: 0;
+                    border-radius: 100%;
+                    position: absolute;
+                    background-color: #bec7cf;
+                }
+
+                #careers .banner.services_inside .banner_info {
+                    text-align: center;
+                    margin-left: auto !important;
+                    width: 100% !important;
+                }
+
+                @media screen and (max-width: 767px) {
+
+                    #careers .banner.services_inside .banner_info {
+                        top: 30% !important;
+                    }
+                }
+
+                #careers .banner.services_inside .banner_info .title_heading {
+                    line-height: 70px;
+                }
+
+                @media screen and (max-width: 767px) {
+
+                    #careers .banner.services_inside .banner_info .title_heading {
+                        line-height: 35px;
+                    }
+                }
+
+                #careers .about_icon {
+                    width: 85%;
+                    margin: auto;
+                    padding-bottom: 80px;
+                }
+
+                @media screen and (max-width: 767px) {
+
+                    #careers .about_icon {
+                        width: 100%;
+                    }
+                }
+
+                #careers .about_icon p {
+                    padding-bottom: 20px;
+                    color: #3b3b3b;
+                }
+
+                #careers .about_icon h6 {
+                    font-weight: 600;
+                    color: #ed4d16;
+                    padding-bottom: 10px;
+                }
+
+                #careers .about_icon h5 {
+                    font-weight: 600;
+                }

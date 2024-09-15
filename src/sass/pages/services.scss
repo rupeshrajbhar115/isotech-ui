@@ -1,0 +1,190 @@
+#services {
+  padding-top: 82px;
+  .banner {
+    overflow: hidden;
+
+    .banner_slider {
+      .slider {
+        position: relative;
+        padding-bottom: 100px;
+
+        @media screen and (max-width: 992px) {
+          padding-bottom: 50px;
+        }
+
+        .mobile {
+          @media (min-width: 768px) and (max-width: 5000px) {
+            display: none;
+          }
+          @media screen and (max-width: 767px) {
+            display: block;
+          }
+        }
+
+        .dekstop {
+          @media (min-width: 768px) and (max-width: 5000px) {
+            display: block;
+          }
+          @media screen and (max-width: 767px) {
+            display: none;
+          }
+        }
+
+        img {
+          width: 100%;
+          max-width: 100%;
+          height: auto;
+          opacity: 1 !important;
+          animation-duration: 3s;
+          transition: all 1s ease;
+
+          @media screen and (max-width: 992px) {
+            // height: 80vh;
+            object-fit: cover;
+          }
+
+          @media (min-width: 768px) and (max-width: 992px) {
+            height: 50vh;
+            object-fit: cover;
+          }
+        }
+
+        .banner_info {
+          top: 30%;
+          width: 100%;
+          opacity: 0;
+          padding: 15px;
+          text-align: center;
+          overflow: hidden;
+          position: absolute;
+          transform: translateY(-50%);
+
+          @media (min-width: 992px) and (max-width: 1200px) {
+            top: 25%;
+          }
+
+          h2 {
+            color: var(--color_secondary);
+            @media screen and (max-width: 767px) {
+              text-align: center;
+            }
+            span {
+              color: var(--color_white);
+            }
+          }
+
+          .para {
+            padding: 10px 0 25px;
+            color: var(--color_white);
+
+            @media screen and (max-width: 767px) {
+              font-size: 18px;
+            }
+          }
+        }
+
+        &.slick-active {
+          .banner_info {
+            opacity: 1;
+          }
+        }
+      }
+
+      .slider [data-animation-in] {
+        opacity: 0;
+        animation-duration: 1.5s;
+        transition: opacity 0.5s ease 0.3s;
+      }
+
+      .slick-dots {
+        bottom: 25px;
+        text-align: left;
+        margin-left: var(--container_left_space);
+
+        li {
+          button {
+            &:before {
+              z-index: 1;
+              font-size: 40px;
+            }
+          }
+
+          &.slick-active {
+            button {
+              &:after {
+                content: "";
+                width: 20px;
+                height: 19px;
+                left: 0;
+                top: 1px;
+                z-index: 0;
+                border-radius: 100%;
+                position: absolute;
+                background-color: #bec7cf;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .about_icon {
+    width: 85%;
+    margin: auto;
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+    p {
+      text-align: center;
+      padding-bottom: 20px;
+      color: #3b3b3b;
+    }
+    h6 {
+      font-weight: 600;
+      color: #ed4d16;
+      text-align: center;
+    }
+  }
+  .services_card {
+    display: flex;
+    margin: 0 -30px;
+    flex-wrap: wrap;
+    @media screen and (max-width: 767px) {
+      margin: 0;
+    }
+
+    &.services_card_new{
+        .card{
+          width: 50%;
+          @media screen and (max-width: 767px) {
+            width: 100%;
+          }
+          p{
+            padding-bottom: 15px;
+          }
+        }
+    }
+    .card {
+      width: 33.33%;
+      padding: 0 30px;
+      margin-top: 60px;
+      @media screen and (max-width: 767px) {
+        width: 100%;
+        padding: 0;
+      }
+      @media (min-width: 768px) and (max-width: 992px) {
+        width: 50%;
+      }
+      img {
+        width: 100%;
+        border-radius: 15px;
+      }
+      h5 {
+        color: #0a2e7f;
+        font-weight: 600;
+        padding: 10px 0 5px;
+      }
+    }
+  }
+}

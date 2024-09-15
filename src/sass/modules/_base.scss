@@ -1,0 +1,166 @@
+html {
+    min-height: 100%;
+
+    body {
+        font-family: var(--font_text);
+        color: var(--color_text);
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font_heading);
+    letter-spacing: 0;
+}
+
+.rem_link_style {
+    text-decoration: none !important;
+    color: inherit;
+
+    &:hover {
+        color: inherit;
+    }
+
+    &:active {
+        color: inherit;
+    }
+}
+
+.title_heading {
+    @extend .text_xl;
+    font-weight: 800;
+    line-height: 50px;
+    color: var(--color_primary);
+
+    @media screen and (max-width: 767px) {
+        line-height: 35px;
+    }
+
+    span {
+        color: var(--color_secondary);
+    }
+}
+
+.para {
+    @extend .text_reg;
+    line-height: 28px;
+    font-weight: 400;
+    color: var(--color_text);
+}
+
+.btn {
+    @extend .text_sm;
+    color: var(--color_white);
+    font-weight: 600;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 100px;
+    display: inline-block;
+    background-color: var(--color_secondary);
+}
+
+
+.animated {
+    transition: all 0.5s ease;
+}
+
+/* /////////// IMAGE ZOOM /////////// */
+@keyframes zoomInImage {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    to {
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+}
+
+.zoomInImage {
+    animation-name: zoomInImage;
+}
+
+@keyframes zoomOutImage {
+    from {
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.zoomOutImage {
+    animation-name: zoomOutImage;
+}
+
+// scroll out css
+.toTop {
+    &[data-scroll] {
+        transition: all 0.5s ease-out;
+    }
+
+    &[data-scroll="in"] {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    &[data-scroll="out"] {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+}
+
+.toBottom {
+    &[data-scroll] {
+        transition: all 0.5s ease-out;
+    }
+
+    &[data-scroll="in"] {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    &[data-scroll="out"] {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+}
+
+.toLeft {
+    &[data-scroll] {
+        transition: all 0.5s ease-out;
+    }
+
+    &[data-scroll="in"] {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    &[data-scroll="out"] {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+}
+
+.toRight {
+    &[data-scroll] {
+        transition: all 0.5s ease-out;
+    }
+
+    &[data-scroll="in"] {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    &[data-scroll="out"] {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+}
